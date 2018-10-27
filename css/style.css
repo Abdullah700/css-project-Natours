@@ -56,13 +56,15 @@ body {
   top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .heading-primary {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+  backface-visibility: hidden;
 }
 
 .heading-primary-main {
@@ -70,8 +72,7 @@ body {
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 40px;
-  animation-name: move-in-left;
-  animation-duration: 5s;
+  animation: move-in-left 3s ease-in-out;
 
 
 }
@@ -81,8 +82,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 15px;
-  animation-name: move-in-right;
-  animation-duration: 5s;
+  animation: move-in-right 3s ease-in-out;
 }
 
 
@@ -116,4 +116,17 @@ body {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+}
+
+.btn-white {
+  background-color: #ffffff;
+  color: #777777;
 }
