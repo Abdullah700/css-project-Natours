@@ -32,7 +32,8 @@
         }
 
     }
-    &:hover &__photo:not(:hover){
+
+    &:hover &__photo:not(:hover) {
         transform: scale(.95);
     }
 }
